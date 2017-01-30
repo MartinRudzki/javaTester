@@ -78,6 +78,25 @@ public class Main {
 			hashMap.put(key, " value6");
 		}
 		mainObj2.print_hash(hashMap);
+		
+		/************************************************/
+		int k = 1;
+		int j = 1;
+		int a = 5;
+		for(int i = 1; i <= 5 + k; i++) {
+			if(j <= 5-i) {
+				System.out.print(".");
+			} else if(a + k - 1 >= i) {
+				System.out.print(k);
+			} else {	
+				i = k;
+			if (i == 5) {
+				break;
+			}
+			k++;
+			System.out.println();
+			}
+		}
 	}
 	
 }
