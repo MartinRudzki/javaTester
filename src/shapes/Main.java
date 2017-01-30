@@ -81,15 +81,14 @@ public class Main {
 		
 		/************************************************/
 		int k = 1;
-		int j = 1;
-		int a = 5;
+		int j = 5;
 		for(int i = 1; i <= 5 + k; i++) {
-			if(j <= 5-i) {
+			if(1 <= 5-i) {
 				System.out.print(".");
-			} else if(a + k - 1 >= i) {
+			} else if(j + k - 1 >= i) {
 				System.out.print(k);
 			} else {	
-				i = k;
+			i = k;
 			if (i == 5) {
 				break;
 			}
