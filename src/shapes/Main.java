@@ -60,6 +60,9 @@ public class Main {
 		mainObj.print_array(array1, true);
 		
 		/********************************************/
+		/* The simple answer it's be casue a linked hashMap is perfect for hold a key and value.
+		 * It aslo uses insertion-order and that is important depending on what data you want to store. 
+		 */
 		Main mainObj2 = new Main();
 		LinkedHashMap hashMap = new LinkedHashMap();
 		hashMap.put(1, " value1");
@@ -68,6 +71,7 @@ public class Main {
 		hashMap.put(4, " value4");
 		hashMap.put(5, " value5");
 		int key = 5;
+		// If key do not add
 		if (hashMap.containsKey(key)){
 			System.out.print("Extra Key found:" + key + hashMap.get(5) + "\n");
 		}else {
